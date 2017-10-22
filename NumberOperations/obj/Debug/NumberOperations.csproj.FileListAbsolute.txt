@@ -1,0 +1,6 @@
+D:\Projects\EPAM\NET.W.2017.Shakhrai.02\NumberOperations\bin\Debug\NumberOperations.dll
+D:\Projects\EPAM\NET.W.2017.Shakhrai.02\NumberOperations\bin\Debug\NumberOperations.pdb
+D:\Projects\EPAM\NET.W.2017.Shakhrai.02\NumberOperations\obj\Debug\NumberOperations.csproj.CoreCompileInputs.cache
+D:\Projects\EPAM\NET.W.2017.Shakhrai.02\NumberOperations\obj\Debug\NumberOperations.dll
+D:\Projects\EPAM\NET.W.2017.Shakhrai.02\NumberOperations\obj\Debug\NumberOperations.pdb
+D:\Projects\EPAM\NET.W.2017.Shakhrai.02\NumberOperations\obj\Debug\NumberOperations.csprojResolveAssemblyReference.cache
