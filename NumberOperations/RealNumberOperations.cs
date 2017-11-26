@@ -11,9 +11,15 @@ namespace NumberOperations
         public static double FindNthRoot(double number, int power, double epsilon)
         {
             if (power % 2 == 0 && number < 0)
+            {
                 throw new ArgumentException($"Even {nameof(power)} can not be taken from a negative number.");
+            }
+
             if (power < 1)
+            {
                 throw new ArgumentException($"{nameof(power)} should be a natural number.");
+            }
+
             if (epsilon < 0 || epsilon > 1)
             {
                 throw new ArgumentException($"{nameof(epsilon)} should be between in 0 to 1");
@@ -23,8 +29,9 @@ namespace NumberOperations
             do
             {
                 prev = next;
-                next = ((power - 1) * prev + number / Math.Pow(prev, power - 1)) / power;
-            } while (Math.Abs(next - prev) > epsilon);
+                next = (((power - 1) * prev) + (number / Math.Pow(prev, power - 1))) / power;
+            }
+            while (Math.Abs(next - prev) > epsilon);
             return next;
         }
     }

@@ -11,7 +11,8 @@ namespace NumberOperations.Tests
         {
             var actual = BitNumberOperations.InsertNumber(9, 5, 0, 2);
             var expected = 13;
-            Assert.AreEqual(actual, expected);
+
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -19,6 +20,7 @@ namespace NumberOperations.Tests
         {
             var actual = BitNumberOperations.InsertNumber(10, 7, 0, 2);
             var expected = 15;
+
             Assert.AreEqual(actual, expected);
         }
 

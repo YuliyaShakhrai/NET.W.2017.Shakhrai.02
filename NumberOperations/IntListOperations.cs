@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NumberOperations
 {
@@ -14,6 +11,7 @@ namespace NumberOperations
             {
                 throw new ArgumentOutOfRangeException($"{nameof(digit)} should be between in 0 to 9.");
             }
+
             if (intList.Count == 0)
             {
                 throw new ArgumentNullException($"{nameof(intList)} is empty.");
@@ -27,6 +25,7 @@ namespace NumberOperations
                     i--;
                 }
             }
+
             return intList;
         }
 
@@ -40,8 +39,12 @@ namespace NumberOperations
                 divisionResult = tempNumber / 10;
                 modulo = tempNumber % 10;
                 tempNumber = divisionResult;
-                if (modulo == digit) return true;
-            } while (divisionResult != 0);
+                if (Math.Abs(modulo) == digit)
+                {
+                    return true;
+                }
+            }
+            while (divisionResult != 0);
             return false;
         }
     }

@@ -1,9 +1,5 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using NUnit.Framework;
 
 namespace NumberOperations.Tests
 {
@@ -11,7 +7,6 @@ namespace NumberOperations.Tests
 
     public class IntNumberOperationsNUnitTests
     {
-
         [TestCase(12, 21)]
         [TestCase(513, 531)]
         [TestCase(2017, 2071)]

@@ -1,9 +1,6 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace NumberOperations.Tests
 {
@@ -13,8 +10,8 @@ namespace NumberOperations.Tests
         [Test]
         public void FilterDigit_PositiveResultTest()
         {
-            List<int> testList = new List<int> {1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17, 28, 307};
-            List<int> expected = new List<int> {7, 70, 17, 307};
+            List<int> testList = new List<int> { 1, 2, 3, 4, 5, 6, 7, 68, 69, 70, 15, 17, 28, 307 };
+            List<int> expected = new List<int> { 7, 70, 17, 307 };
             int digit = 7;
             List<int> actual = IntListOperations.FilterDigit(testList, digit);
 
@@ -24,7 +21,7 @@ namespace NumberOperations.Tests
         [Test]
         public void FilterDigit_NegativeResultTest()
         {
-            List<int> testList = new List<int> {1, 2, 3, 4, 5, 6, 7};
+            List<int> testList = new List<int> { 1, 2, 3, 4, 5, 6, 7 };
             List<int> expected = new List<int>();
             int digit = 8;
             List<int> actual = IntListOperations.FilterDigit(testList, digit);
@@ -32,7 +29,7 @@ namespace NumberOperations.Tests
             Assert.AreEqual(actual, expected);
         }
 
-        [TestCase (11, 1, true)]
+        [TestCase(11, 1, true)]
         [TestCase(11, 0, false)]
         [TestCase(1231, 6, false)]
         public void IsNumberContainsDigit_Tests(int listItem, int digit, bool expected)

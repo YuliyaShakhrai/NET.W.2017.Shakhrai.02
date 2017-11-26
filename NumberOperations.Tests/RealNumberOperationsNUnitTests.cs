@@ -1,9 +1,5 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using NUnit.Framework;
 
 namespace NumberOperations.Tests
 {
@@ -32,7 +28,6 @@ namespace NumberOperations.Tests
             Assert.Throws<ArgumentException>(() => RealNumberOperations.FindNthRoot(number, power, epsilon));
         }
 
-
         [TestCase(1, 5, 0.0001, 1)]
         [TestCase(8, 3, 0.0001, 2)]
         [TestCase(0.001, 3, 0.0001, 0.1)]
@@ -48,8 +43,5 @@ namespace NumberOperations.Tests
 
             Assert.AreEqual(expected, actual, epsilon);
         }
-
-
-
     }
 }
